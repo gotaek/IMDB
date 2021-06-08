@@ -17,7 +17,7 @@ def searchTitle():
     row = curs.fetchone()
     while row:
         print("제목: %-50s\t원제: %-50s\t개봉년도: %-10d" % (
-              row["primarytitle"], row["originalTitle"], row["endYear"]))
+              row["primarytitle"], row["originalTitle"], row["startYear"]))
         row = curs.fetchone()
     print()
 
